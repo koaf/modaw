@@ -1,0 +1,680 @@
+focus_tree = {
+	id = ENG_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+	focus = {
+		id = newfocus_2
+		text = 帝国議会
+		icon = GFX_focus_eng_imperial_federation
+		cost = 10.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = newfocus_2
+		text = 方針改革
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 10.00
+		x = 23
+		y = 1
+
+	}
+	focus = {
+		id = newfocus_1
+		text = 保守党の継続
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_2
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = newfocus_4
+		text = 防衛重視
+		icon = GFX_goal_generic_build_tank
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_1
+		}
+		mutually_exclusive = {
+			focus = newfocus_3
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_9
+		text = イングランド要塞
+		icon = GFX_focus_generic_coastal_fort
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_4
+		}
+		x = 1
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_20
+		text = 民主主義の維持
+		icon = GFX_goal_support_democracy
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_9
+		}
+		x = 1
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_3
+		text = 限定的(大嘘)再軍備
+		icon = GFX_focus_generic_combined_arms
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_1
+		}
+		mutually_exclusive = {
+			focus = newfocus_4
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_8
+		text = 欧州融和政策
+		icon = GFX_goal_generic_national_unity
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_4
+			focus = newfocus_3
+		}
+		mutually_exclusive = {
+			focus = newfocus_10
+		}
+		x = 5
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_11
+		text = 社会主義防止条約
+		icon = GFX_goal_anti_comintern_pact
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_8
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_21
+		text = 欧州連合
+		icon = GFX_goal_anschluss
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_11
+		}
+		prerequisite = {
+			focus = newfocus_20
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_10
+		text = 横槍介入主義
+		icon = GFX_focus_TUR_ratify_the_six_arrows
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_3
+		}
+		mutually_exclusive = {
+			focus = newfocus_8
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_13
+		text = 首脳部の団結
+		icon = GFX_focus_eng_the_kings_party
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_10
+		}
+		x = 8
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_12
+		text = 融和政策はクソ喰らえ
+		icon = GFX_focus_eng_motion_of_no_confidence
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_10
+		}
+		x = 10
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_14
+		text = 帝国主義
+		icon = GFX_focus_generic_monarchy_1
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_13
+		}
+		prerequisite = {
+			focus = newfocus_12
+		}
+		x = 9
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_17
+		text = ヨーロッパに介入
+		icon = GFX_focus_usa_focus_on_europe
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_14
+		}
+		x = 6
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_18
+		text = アメリカに介入
+		icon = GFX_focus_generic_strike_at_democracy3
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_14
+		}
+		x = 8
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_19
+		text = 三枚舌ドクトリン
+		icon = GFX_goal_generic_forceful_treaty
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_14
+		}
+		x = 9
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_15
+		text = 中東に介入
+		icon = GFX_focus_TUR_treaty_of_saadabad
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_14
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_16
+		text = アジアに介入
+		icon = GFX_focus_generic_japanese_imperial_glory
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_14
+		}
+		x = 12
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_6
+		text = 極右勢力の容認
+		icon = GFX_focus_eng_organise_the_blackshirts
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_2
+		}
+		mutually_exclusive = {
+			focus = newfocus_5
+			focus = newfocus_7
+			focus = newfocus_5
+		}
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_23
+		text = 国家転覆
+		icon = GFX_focus_BUL_condemn_macedonian_organizations
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_6
+		}
+		x = 17
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_25
+		text = 王はもういらない
+		icon = GFX_goal_tfv_sever_ties_with_uk
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_23
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_26
+		text = 再興プラン
+		icon = GFX_goal_generic_construct_civilian
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_25
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_29
+		text = 神よ殿下を守り給え
+		icon = GFX_goal_generic_attack_allies
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_25
+		}
+		x = 17
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_22
+		text = ブリティッシュ・ナショナリズム
+		icon = GFX_goal_support_fascism
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_29
+		}
+		x = 17
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_24
+		text = 第二共和政
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_22
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_33
+		text = 独英不可侵条約
+		icon = GFX_goal_generic_military_deal
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_25
+		}
+		x = 19
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_34
+		text = ハノーヴァー同盟
+		icon = GFX_focus_chi_mission_to_germany
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_33
+		}
+		x = 19
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_5
+		text = 王位継承法の廃止
+		icon = GFX_focus_eng_special_air_service
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_2
+		}
+		mutually_exclusive = {
+			focus = newfocus_6
+			focus = newfocus_7
+			focus = newfocus_6
+			focus = newfocus_7
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_31
+		text = ガリポリの復讐
+		icon = GFX_focus_generic_attack_greece
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_5
+		}
+		x = 19
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_31
+		text = 旧教の王
+		icon = GFX_focus_por_concordat
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_5
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_36
+		text = フランス王位を主張
+		icon = GFX_focus_focus_fra_orleans_restoration
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_31
+		}
+		x = 22
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_37
+		text = 第三次百年戦争
+		icon = GFX_focus_attack_france
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_36
+		}
+		x = 22
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_39
+		text = アンジュ－帝国の復興
+		icon = GFX_focus_focus_fra_border
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_37
+		}
+		x = 22
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_35
+		text = 教皇を招く
+		icon = GFX_focus_generic_italy_first
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_31
+		}
+		x = 24
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_38
+		text = カンタベリー条約
+		icon = GFX_focus_befriend_italy
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_35
+		}
+		x = 24
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_40
+		text = 十字軍再結成
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_38
+		}
+		x = 24
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_41
+		text = デーン人への復讐
+		icon = GFX_goal_generic_wolf_pack
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_40
+		}
+		prerequisite = {
+			focus = newfocus_39
+		}
+		x = 23
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_7
+		text = 貴族院の権限増幅
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_2
+		}
+		mutually_exclusive = {
+			focus = newfocus_5
+			focus = newfocus_6
+			focus = newfocus_5
+		}
+		x = 29
+		y = 2
+
+	}
+	focus = {
+		id = newfocus_50
+		text = 戴冠式
+		icon = GFX_focus_generic_royal_wedding
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_7
+		}
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = newfocus_42
+		text = 神よ王を守り給え
+		icon = GFX_focus_eng_god_save_the_king
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_50
+		}
+		x = 29
+		y = 4
+
+	}
+	focus = {
+		id = newfocus_43
+		text = マラヤ植民地の統合
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_42
+		}
+		x = 27
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_49
+		text = 地主貴族との和解
+		icon = GFX_goal_generic_improve_relations
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_42
+		}
+		x = 29
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_46
+		text = 英語圏の統合
+		icon = GFX_focus_eng_unite_the_anglosphere
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_49
+		}
+		x = 29
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_45
+		text = 帝国の徴兵
+		icon = GFX_focus_generic_commonwealth_build_infantry
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_43
+		}
+		x = 27
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_27
+		text = インドの統合
+		icon = GFX_focus_RAJ_british_investors
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_28
+		}
+		x = 15
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_28
+		text = 植民地の直轄統治
+		icon = GFX_focus_RAJ_clamp_down_on_corruption
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_26
+		}
+		x = 15
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_32
+		text = 植民地の再征服
+		icon = GFX_focus_eng_bring_the_dominions_back_into_the_fold
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_24
+		}
+		prerequisite = {
+			focus = newfocus_27
+		}
+		prerequisite = {
+			focus = newfocus_31
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = newfocus_44
+		text = 沈まぬ陽
+		icon = GFX_focus_eng_the_sun_never_sets
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_46
+		}
+		prerequisite = {
+			focus = newfocus_45
+		}
+		prerequisite = {
+			focus = newfocus_48
+		}
+		x = 29
+		y = 7
+
+	}
+	focus = {
+		id = newfocus_47
+		text = 日英同盟
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_42
+		}
+		x = 31
+		y = 5
+
+	}
+	focus = {
+		id = newfocus_48
+		text = 香港協定
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_47
+		}
+		x = 31
+		y = 6
+
+	}
+	focus = {
+		id = newfocus_51
+		text = 防衛体制
+		icon = GFX_focus_generic_manpower
+		cost = 10.00
+		prerequisite = {
+			focus = newfocus_20
+			focus = newfocus_11
+		}
+		x = 1
+		y = 6
+
+	}
+}
